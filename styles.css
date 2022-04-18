@@ -123,3 +123,53 @@ button:hover {
 .modal.open .modalInner {
   transform: translateY(0);
 }
+
+/* Mobile */
+@media (max-width: 500px) {
+  .hero {
+    margin: 0 10px;
+    padding: 20px 15px;
+  }
+
+  .hero p {
+    line-height: 1.5;
+  }
+
+  .hero .buttons {
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .modalInner {
+    margin: 20px;
+    max-height: 100vh;
+  }
+
+  .modal figure {
+    max-height: 100vh;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 700px) {
+
+  .modalInner {
+    margin: 10px;
+    max-height: 100vh;
+  }
+
+  .modal figure {
+    max-height: calc(100vh - 75px);
+  }
+
+  .modal .buttons {
+    padding: 0px 10px 10px 10px;
+  }
+  
+  .modal .buttons button {
+    width: 70px;
+    padding: 0px;
+  }
+ 
+  
+}
